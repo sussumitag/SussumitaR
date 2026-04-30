@@ -1,0 +1,39 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+img {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.reference-card {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.reference-img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    cursor: zoom-in;
+    transition: transform 0.3s;
+}
+
+.reference-img:hover {
+    transform: scale(1.02);
+}
+p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
