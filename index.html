@@ -10,7 +10,12 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
+<!-- ✅ LINK YOUR CSS FILE HERE -->
+<link rel="stylesheet" href="style.css">
+
 <style>
+/* KEEP ONLY GENERIC STYLES — REMOVE IMAGE SIZE CONFLICT */
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -42,10 +47,11 @@ nav a {
     gap: 40px;
 }
 
+/* ❌ REMOVED THIS (it was breaking everything)
 .hero img {
     width: 180px;
-    border-radius: 50%;
 }
+*/
 
 /* BUTTON */
 .btn {
@@ -113,7 +119,7 @@ footer {
     <h2>Sussumita Ravindranath</h2>
     <div>
         <a href="#about">About</a>
-        <a href="#cases">Case Studies</a>
+        <a href="#hightights">Highlights</a>
         <a href="#skills">Skills</a>
         <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
@@ -122,7 +128,8 @@ footer {
 
 <!-- HERO -->
 <section class="hero fade-in">
-    <div>
+
+    <div class="hero-content">
         <h1>Quality Assurance Lead for Automotive Services</h1>
         <p>
             Automotive SPICE | ISO 9001 QMS | PMP® Certified  
@@ -131,7 +138,11 @@ footer {
         <a class="btn" href="resume.pdf" download>Download Resume</a>
     </div>
 
-    <img src="profile.jpg" alt="Profile Photo">
+    <!-- ✅ THIS NOW MATCHES YOUR CSS PERFECTLY -->
+    <div class="hero-image">
+        <img src="profile.jpg" alt="Sussumita Ravindranath">
+    </div>
+
 </section>
 
 <!-- ABOUT -->
@@ -142,39 +153,89 @@ footer {
         <p>I’m a Quality Assurance Specialist with 7+ years of experience in the automotive industry, specializing in ASPICE, ISO 9001, and process excellence. </p>
         <p>PMP® certified, I focus on delivering high quality, audit ready solutions while leading cross functional teams in complex engineering environments.</p> 
         <p>Originally from India and now based in Munich, Germany, my journey has been shaped by continuous learning, adaptability, and a drive to push beyond my limits. </p> 
-        <p>From starting my career at KPIT Technologies to completing my MBA while working full-time, I’ve always believed in growing through challenges.</p> 
-        <p>Beyond my professional life, I’m a former national level basketball player and state-level athlete who enjoys trekking, stargazing, baking, and cycling. </p> 
-        <p>Recently becoming a mother has added a new dimension to my perspective, making me more grounded, resilient, and purpose-driven.</p> 
-        <p>I believe in a positive, collaborative mindset and in growing together,both as individuals and as teams.</p>
+        <p>From starting my career at KPIT Technologies to completing my MBA while working full time, I’ve always believed in growing through challenges.</p> 
+        <p>Beyond my professional life, I’m a former national level basketball player and state level athlete who enjoys trekking, stargazing, baking, and cycling. </p> 
+        <p>Recently becoming a mother has added a new dimension to my perspective, making me more grounded, resilient, and purpose driven.</p> 
+        <p>I believe in a positive, collaborative mindset and in growing together, both as individuals and as teams.</p>
     </div>
  
 
 </div>
 </section>
 
-<!-- CASE STUDIES -->
-<section id="cases" class="section fade-in"> 
-<h2>Case Studies</h2> <div class="card case"> 
-    <h3>Reducing Defect Leakage by 30%</h3> 
-    <p><strong>Context:</strong> Multi-team automotive program</p> 
-    <p><strong>Challenge:</strong> High defect leakage, weak RCA processes</p> 
-    <p><strong>Approach:</strong> Introduced RCA workshops, improved classification, governance metrics</p> 
-    <p><strong>Impact:</strong> 30% reduction, improved release stability</p> 
-</div> 
-<div class="card case"> 
-    <h3>Delivering €2M+ Programs</h3> 
-    <p><strong>Context:</strong> Large OEM programs</p> 
-    <p><strong>Challenge:</strong> Coordination across teams</p> 
-    <p><strong>Approach:</strong> KPI tracking, structured planning</p> 
-    <p><strong>Impact:</strong> 98% on-time delivery, +15% satisfaction</p> 
-</div> 
-<div class="card case"> 
-    <h3>ASPICE Level 3 Compliance</h3> 
-    <p><strong>Context:</strong> Audit gaps</p> 
-    <p><strong>Approach:</strong> Gap analysis, process alignment</p> 
-    <p><strong>Impact:</strong> Reduced audit findings</p> </div> 
-</section>
+<!-- HIGHLIGHTS -->
+<section id="cases" class="section fade-in">
+    <h2>Highlights</h2>
 
+    <div class="card case">
+        <h3>Defect Prevention & Quality Transformation</h3>
+
+        <p><strong>Environment:</strong> Multi-team automotive software programs for OEM clients</p>
+
+        <p><strong>Challenge:</strong> High defect leakage, inconsistent RCA practices, and weak release governance impacting software stability.</p>
+
+        <p><strong>Approach:</strong></p>
+        <ul>
+            <li>Introduced structured Root Cause Analysis (RCA) workshops across engineering teams</li>
+            <li>Improved defect classification and escalation workflows</li>
+            <li>Established governance metrics and quality reporting aligned with ASPICE expectations</li>
+            <li>Collaborated with development, QA, and release stakeholders to strengthen preventive quality processes</li>
+        </ul>
+
+        <p><strong>Results Achieved:</strong></p>
+        <ul>
+            <li>Reduced defect leakage by 30%</li>
+            <li>Improved release stability and audit readiness</li>
+            <li>Increased visibility into recurring quality issues and corrective actions</li>
+        </ul>
+    </div>
+<!-- Highlight 2 -->
+<div class="card case">
+    <h3>€2M+ Automotive Project Delivery</h3>
+
+    <p><strong>Environment:</strong> Large-scale automotive software programs with cross-functional global teams</p>
+
+    <p><strong>Challenge:</strong> Managing delivery coordination, milestone tracking, and stakeholder alignment across multiple engineering streams.</p>
+
+    <p><strong>Approach:</strong></p>
+    <ul>
+        <li>Managed delivery governance for €2M+ automotive programs using Jira and MS Project</li>
+        <li>Coordinated cross-functional teams of 25+ engineers across development and quality functions</li>
+        <li>Implemented KPI-driven planning, sprint tracking, and risk management processes</li>
+        <li>Improved collaboration between engineering, management, and OEM stakeholders</li>
+    </ul>
+
+    <p><strong>Results Achieved:</strong></p>
+    <ul>
+        <li>Achieved 98% on-time delivery across key milestones</li>
+        <li>Improved customer satisfaction by 15%</li>
+        <li>Reduced delivery bottlenecks through structured planning and governance</li>
+    </ul>
+</div>
+
+<!-- Highlight 3 -->
+<div class="card case">
+    <h3>ASPICE Level 3 & Compliance Excellence</h3>
+
+    <p><strong>Environment:</strong> Automotive software projects requiring ASPICE, ISO 26262, and TISAX compliance</p>
+
+    <p><strong>Challenge:</strong> Process gaps, audit findings, and inconsistent engineering compliance practices.</p>
+
+    <p><strong>Approach:</strong></p>
+    <ul>
+        <li>Conducted gap analysis and process compliance assessments across engineering teams</li>
+        <li>Supported ASPICE Level 3 process alignment and audit preparation activities</li>
+        <li>Strengthened traceability, documentation governance, and quality reporting processes</li>
+        <li>Collaborated with stakeholders to align development practices with ISO 26262 and VDA expectations</li>
+    </ul>
+
+    <p><strong>Results Achieved:</strong></p>
+    <ul>
+        <li>Reduced audit findings and compliance gaps</li>
+        <li>Improved process maturity and engineering traceability</li>
+        <li>Enhanced readiness for customer and internal quality assessments</li>
+    </ul>
+</div>
 </section>
 
 <!-- SKILLS -->
@@ -191,42 +252,42 @@ footer {
 <div class="grid">
 
 <div class="card">
-<img src="certificates/pmp.jpg">
+<img src="pmp.jpg"">
 <p>PMP® Certification</p>
 </div>
 
 <div class="card">
-<img src="certificates/ai.jpg">
+<img src="ai.jpg">
 <p>Generative AI Overview for Project Managers</p>
 </div>
 
 <div class="card">
-<img src="certificates/google.jpg">
+<img src="google.jpg">
 <p>Google Project Management</p>
 </div>
 
 <div class="card">
-<img src="certificates/aspice.jpg">
+<img src="aspice.jpg">
 <p>Automotive SPICE</p>
 </div>
 
 <div class="card">
-<img src="certificates/quality.jpg">
+<img src="quality.jpg">
 <p>Quality Improvement and Management</p>
 </div>
 
 <div class="card">
-<img src="certificates/sixsigma.jpg">
+<img src="sixsigma.jpg">
 <p>Six Sigma Principles</p>
 </div>
 
 <div class="card">
-<img src="certificates/engineering.jpg">
+<img src="engineering.jpg">
 <p>Major Engineering Project Performance</p>
 </div>
 
 <div class="card">
-<img src="certificates/pmquality.jpg">
+<img src="pmquality.jpg">
 <p>Project Management Foundations Quality</p>
 </div>
 
@@ -260,7 +321,7 @@ Download Full Reference Letter
 <p>Address:Munich, Germany</p>
 <p>English: C2</p>
 <p>Deutsch: A2</p>
-<p>German Driving License Class B</p>
+<p>German Driving License: Class B</p>
 <p>Legally authorized to work in Europe</p>
 <p>Open to roles across Germany & Europe</p>
 
